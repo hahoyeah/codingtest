@@ -1,4 +1,13 @@
 def solution(n, arr1, arr2):
+    # answer = []
+    # for i,j in zip(arr1,arr2):
+    #     arr12 = str(bin(i|j)[2:]) #str안써도 이미 str
+    #     arr12 = arr12.rjust(n,'0')
+    #     arr12 = arr12.replace('1','#')
+    #     arr12 = arr12.replace('0',' ')
+    #     answer.append(arr12)
+    # return answer
+    
     result = []
     for i,j in zip(arr1,arr2):
         arr1_bb = ''
@@ -16,3 +25,5 @@ def solution(n, arr1, arr2):
         result.append(s)
     
     return result
+
+
