@@ -11,6 +11,12 @@ def solution(s):
         'eight':8,
         'nine':9
     }
+    
+    # answer = s
+    # for key, value in number.items(): #딕셔너리의 값과 키를 함께 사용할 수 있는 .items()를 꼭 기억하자!
+    #     answer=answer.replace(key,str(value))
+    # return int(answer)
+    
     k=''
     result = ''
     for i in s:
