@@ -12,3 +12,7 @@ def solution(a, b):
     import datetime as dt
     a = dt.datetime(2016,a,b)
     return dic[a.weekday()]
+    
+    # week = ['FRI','SAT','SUN','MON','TUE','WED','THU']
+    # end = [31,29,31,30,31,30,31,31,30,31,30,31]
+    # return week[(sum(end[:a-1]) + b -1)%7]
