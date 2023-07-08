@@ -1,13 +1,13 @@
 def solution(survey, choices):
-    from collections import defaultdict
-    dic = defaultdict(int)
+    # from collections import defaultdict
+    # dic = defaultdict(int)
     left = ['R','C','J','A']
     right = ['T','F','M','N']
     result = ''
-
+    dic = {}
     for i,j in zip(left,right):
-        dic[i]
-        dic[j]
+        dic[i] = 0
+        dic[j] = 0
         
     num = [3,2,1,0,1,2,3]
     
