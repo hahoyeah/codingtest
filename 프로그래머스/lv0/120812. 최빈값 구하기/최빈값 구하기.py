@@ -1,10 +1,18 @@
-from collections import Counter
 def solution(array):
-    cnt = Counter(array)
-    max_cnt = max(cnt.values())
+    from collections import Counter, defaultdict
+    s = Counter(array)
+    ma = 0
+    result = 0
+    for key in s:
+        if s[key]>ma:
+            ma=s[key]
+            result = key
+    c=0
+    for key in s:
+        if ma==s[key]:
+            c+=1
     
-    len_max = [[i,v] for i,v in cnt.items() if max_cnt==v]
-    if len(len_max) > 1:
+    if c>1:
         return -1
-
-    return len_max[0][0]
+    
+    return result
