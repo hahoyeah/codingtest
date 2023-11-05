@@ -13,12 +13,8 @@ while q:
     if not q:
         break
     if d[a-1]>0:
-        for _ in range(d[a-1]-1):
-            t = q.popleft()
-            q.append(t)
+        q.rotate(-(d[a-1]-1))
     else:
-        for _ in range(abs(d[a-1])):
-            t = q.pop()
-            q.appendleft(t)
+        q.rotate(abs(d[a-1]))
             
 print(' '.join(result))
