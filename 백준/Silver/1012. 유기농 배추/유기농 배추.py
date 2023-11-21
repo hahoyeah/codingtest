@@ -1,5 +1,6 @@
 import sys
-sys.setrecursionlimit(10000)
+# 이거 안쓰면 최대 재귀 깊이보다 더 깊어져서 오류난다
+sys.setrecursionlimit(10000) # 재귀의 깊이를 설정(기본1000)
 input = sys.stdin.readline
 
 t = int(input())
