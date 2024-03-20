@@ -19,7 +19,7 @@ def ans(k,n,d):
         if result >= n:
             start = mid + 1
             len = max(mid, len)
-        if result < n:
+        else:
             end = mid - 1
 
     return len
