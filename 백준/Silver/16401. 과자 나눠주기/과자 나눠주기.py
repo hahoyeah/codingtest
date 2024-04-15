@@ -13,8 +13,7 @@ while start<=end:
     count = 0
     mid = (start+end)//2
     for i in graph:
-        if i>=mid:
-            count += i//mid
+        count += i//mid
     if count >= m:
         start = mid+1
         result = max(result,mid)
